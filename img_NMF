@@ -3,13 +3,7 @@ close ;
 clc;
 
 img_V=imread('penguin.jpg');
-[d1,d2,d3] = size(V);
-if  d3 > 2
 gray_V = rgb2gray(img_V);
-else
-gray_V = img_V;
-end
-
 V = double(gray_V);
 subplot(1,2,1);
 imshow(mat2gray(V));                %mat2gray将数值矩阵转化为灰度图，每个值在0,1
